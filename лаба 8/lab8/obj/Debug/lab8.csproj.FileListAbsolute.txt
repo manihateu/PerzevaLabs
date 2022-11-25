@@ -1,0 +1,10 @@
+C:\Users\nik85\source\repos\lab8\lab8\obj\Debug\lab8.csproj.AssemblyReference.cache
+C:\Users\nik85\source\repos\lab8\lab8\obj\Debug\lab8.csproj.SuggestedBindingRedirects.cache
+C:\Users\nik85\source\repos\lab8\lab8\obj\Debug\lab8.Properties.Resources.resources
+C:\Users\nik85\source\repos\lab8\lab8\obj\Debug\lab8.csproj.GenerateResource.cache
+C:\Users\nik85\source\repos\lab8\lab8\obj\Debug\lab8.csproj.CoreCompileInputs.cache
+C:\Users\nik85\source\repos\lab8\lab8\bin\Debug\lab8.exe.config
+C:\Users\nik85\source\repos\lab8\lab8\bin\Debug\lab8.exe
+C:\Users\nik85\source\repos\lab8\lab8\bin\Debug\lab8.pdb
+C:\Users\nik85\source\repos\lab8\lab8\obj\Debug\lab8.exe
+C:\Users\nik85\source\repos\lab8\lab8\obj\Debug\lab8.pdb
