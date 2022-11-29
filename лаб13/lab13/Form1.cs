@@ -29,8 +29,8 @@ namespace lab13
                         int t = Array[i];
                         Array[i] = Array[j];
                         Array[j] = t;
+                        iteration += 1;
                     }
-                iteration += 1;
             }
         }
 
@@ -141,8 +141,8 @@ namespace lab13
         int[] numberstodihotomy = new int[100];
         private void button1_Click(object sender, EventArgs e)
             {
-            
-                textBox5.Text = "";
+
+                listBox1.Items.Clear();
                 Array.Clear(numbers, 0, 100);
                 Random rand = new Random();
                 for (int y = 0; y < 100; y++)
@@ -150,7 +150,8 @@ namespace lab13
                     numbers[y] = rand.Next(1,100);
                     numberstosort[y] = numbers[y];
                     numberstodihotomy[y] = numbers[y];
-                    textBox5.Text += "[" + numbers[y].ToString() + "]";
+                    listBox1.Items.Add(numbers[y].ToString());
+                
                 }
                 BubbleSort(ref numberstodihotomy);
             }
@@ -158,14 +159,14 @@ namespace lab13
         private void button2_Click(object sender, EventArgs e)
         {
             iteration = 0;
-            textBox6.Text = "";
-            textBox7.Text = "";
-            textBox8.Text = "";
-            textBox10.Text = "";
+            listBox2.Items.Clear();
+            listBox4.Items.Clear();
+            listBox5.Items.Clear();
+            listBox6.Items.Clear();
             BubbleSort(ref numberstosort);
             for (int y = 0; y < 100; y++)
             {
-                textBox6.Text += "[" + numberstosort[y].ToString() + "]";
+                listBox2.Items.Add(numberstosort[y].ToString());
                 numberstosort[y] = numbers[y];
             }
             textBox2.Text = iteration.ToString();
@@ -173,7 +174,7 @@ namespace lab13
             SelectionSort(ref numberstosort);
             for (int y = 0; y < 100; y++)
             {
-                textBox7.Text += "[" + numberstosort[y].ToString() + "]";
+                listBox4.Items.Add(numberstosort[y].ToString());
                 numberstosort[y] = numbers[y];
             }
             textBox3.Text = iteration.ToString();
@@ -181,7 +182,7 @@ namespace lab13
             SortArray(ref numberstosort, 0, 99);
             for (int y = 0; y < 100; y++)
             {
-                textBox8.Text += "[" + numberstosort[y].ToString() + "]";
+                listBox5.Items.Add(numberstosort[y].ToString());
                 numberstosort[y] = numbers[y];
             }
             textBox4.Text = iteration.ToString();
@@ -189,7 +190,7 @@ namespace lab13
             ShellSort(ref numberstosort,100);
             for (int y = 0; y < 100; y++)
             {
-                textBox10.Text += "[" + numberstosort[y].ToString() + "]";
+                listBox6.Items.Add(numberstosort[y].ToString());
                 numberstosort[y] = numbers[y];
             }
             textBox11.Text = iteration.ToString();
@@ -242,6 +243,8 @@ namespace lab13
             }
             catch { }
         }
+
+        
     }
 }
 

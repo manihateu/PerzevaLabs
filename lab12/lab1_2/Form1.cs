@@ -21,7 +21,7 @@ namespace lab1_2
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.ResizeRedraw | ControlStyles.UserPaint, true);
 
             path = new GraphicsPath();
-            BuildSerpinsy(path, 0, 0, 100, 5);
+            BuildSerpinsy(path, 0, 0, 200, 5);
         }
 
         protected override void OnPaint(PaintEventArgs e)
